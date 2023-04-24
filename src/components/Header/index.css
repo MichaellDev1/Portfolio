@@ -1,0 +1,58 @@
+.logoPortfolio:hover div {
+    transform: rotate(360deg);
+    transition: transform 2s ease-in-out;
+}
+
+.navBar {
+    border-radius: 25px;
+}
+
+.titleMenu {
+    display: none;
+    border-radius: 10px;
+}
+
+.btnOpenMenu {
+    display: none;
+}
+
+.backgroundMenu {
+    background: rgba(5, 5, 5, 0.014);
+    backdrop-filter: blur(20px);
+}
+
+.nav__links {
+    border-bottom: 2px solid transparent;
+}
+
+.nav__links:hover {
+    border-bottom: 2px solid rgb(60, 180, 216);
+}
+
+@media (max-width: 768px) {
+    .btnOpenMenu {
+        display: block;
+    }
+
+    .navBar {
+        flex-direction: column;
+        position: absolute;
+        top: 20px;
+        z-index: 100;
+        transition: opacity .3s;
+        left: 0;
+        width: 96%;
+        margin: auto;
+        padding: 35px 20px;
+        right: 0;
+    }
+
+    .titleMenu {
+        display: block;
+    }
+
+    .nav__links {
+        border-bottom: 1px solid rgb(78, 78, 78);
+        border-radius: none;
+    }
+}

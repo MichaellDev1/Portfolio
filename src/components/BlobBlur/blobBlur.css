@@ -1,0 +1,46 @@
+.blobs {
+    position: absolute;
+    isolation: isolate;
+    filter: blur(85px);
+    pointer-events: none;
+}
+
+.cyan-blob {
+    position: absolute;
+    top: 21%;
+    left: 0;
+    width: 55%;
+    height: 63%;
+    background: radial-gradient(farthest-side, #00e3ffeb, transparent);
+    mix-blend-mode: multiply;
+}
+
+.blue-blob {
+    position: absolute;
+    top: 25%;
+    left: 24%;
+    width: 25%;
+    height: 51%;
+    background: radial-gradient(farthest-side, #2200ff33, transparent);
+    mix-blend-mode: multiply;
+}
+
+.animation--active {
+    animation: backblur 20s alternate infinite;
+}
+
+.purple-blob {
+    position: absolute;
+    top: 18%;
+    left: 25%;
+    width: 49%;
+    height: 66%;
+    background: radial-gradient(farthest-side, #d900ff8f, transparent);
+}
+
+@keyframes backblur {
+    0% {transform: rotate(0);}
+    50% {transform: translateX(100px)}
+    70% {transform: rotate(36deg);}
+    100% {transform: translate(-100px,-100px);}
+}

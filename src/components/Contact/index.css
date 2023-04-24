@@ -1,0 +1,6 @@
+.footer-redes {
+    margin: 0 7px;
+}
+.footer-redes:first-child {
+    margin-left: 0;
+}

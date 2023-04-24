@@ -1,0 +1,20 @@
+.bienvenida {
+    animation: bienvenida 2s linear;
+}
+
+.bienvenidaContent {
+    animation: backgroundBienvenida 2s linear;
+}
+
+@keyframes bienvenida {
+    100% {
+        transform: scale(10);
+        opacity: 0;
+    }
+}
+
+@keyframes backgroundBienvenida {
+    100% {
+        opacity: 0;
+    }
+}

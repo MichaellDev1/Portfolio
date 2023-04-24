@@ -1,0 +1,9 @@
+.logoFooter {
+    animation: rotationLogo 30s linear infinite;
+}
+
+@keyframes rotationLogo {
+    100% {
+        transform: rotate(360deg);
+    }
+}
