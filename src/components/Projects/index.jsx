@@ -3,14 +3,15 @@ import { projectsData } from '../../data/projectsData'
 import Context from '../../Context/Themes'
 import Button from '../ButtonHero/index'
 import BlobBlur from '../BlobBlur/BlobBlur'
+import Titles from '../Title'
 const CardProject = React.lazy(() => import('../CardProject'))
 
 export default function Projects () {
   const { Themes } = useContext(Context)
   return (
     <div className='w-full min-h-[400px] relative mb-36' id='projects'>
-      <div className='z-[1]'>
-        <div><h2 className='py-5 text-3xl font-bold' style={{ color: Themes.text }}>Proyectos</h2></div>
+      <div className='content-project relative z-[1]'>
+        <Titles Themes={Themes} title='Proyectos' />
 
         <div className='flex flex-wrap justify-center'>
           {
@@ -22,12 +23,12 @@ export default function Projects () {
   }
         </div>
         <div className='w-full text-center mt-10'>
-          <Button style={{ background: '#0284C7', padding: '8px 20px', fontSize: '18px' }}>
+          <Button href='https://github.com/MichaellDev1' style={{ background: '#0284C7', padding: '8px 20px', fontSize: '18px' }}>
             Ver mas
           </Button>
         </div>
       </div>
-      <BlobBlur positionStyles={{ top: '0', left: '0', height: '600px', width: '500px', opacity: '0.6' }} />
+      <BlobBlur positionStyles={{ top: '0', left: '0', height: '600px', width: '45%', opacity: '0.6' }} />
     </div>
   )
 }

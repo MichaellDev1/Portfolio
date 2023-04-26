@@ -1,0 +1,10 @@
+.barra {
+    background-color: red;
+    animation: scrolling 1s alternate infinite;
+}
+
+@keyframes scrolling {
+    100%{
+        transform: translateY(30px);
+    }
+}

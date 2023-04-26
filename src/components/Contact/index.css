@@ -1,6 +1,41 @@
 .footer-redes {
     margin: 0 7px;
 }
+
 .footer-redes:first-child {
     margin-left: 0;
+}
+
+.content-method-contact {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contact-method {
+    margin-left: 20px;
+}
+
+.contact-method:first-child {
+    margin-left: 0;
+}
+
+.link-contect:hover span{
+    transform: translate(10px,-10px);
+    transition: transform .2s;
+}
+
+@media (max-width: 800px) {
+    .content-method-contact {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-method {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    .contact-method:first-child {
+        margin-top: 0;
+    }
 }

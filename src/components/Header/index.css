@@ -5,6 +5,7 @@
 
 .navBar {
     border-radius: 25px;
+    overflow: hidden;
 }
 
 .titleMenu {
@@ -18,15 +19,26 @@
 
 .backgroundMenu {
     background: rgba(5, 5, 5, 0.014);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(2px);
 }
 
 .nav__links {
     border-bottom: 2px solid transparent;
 }
 
-.nav__links:hover {
-    border-bottom: 2px solid rgb(60, 180, 216);
+
+.start-home {
+    position: absolute;
+    width: 0;
+    z-index: -1;
+    border-radius: 5px;
+    transition: left .5s, opacity .5s;
+    height: 75%;
+    left: 0;
+    top: 0;
+    background-color: rgba(168, 168, 168, 0.199);
+    bottom: 0;
+    margin: auto;
 }
 
 @media (max-width: 768px) {
@@ -54,5 +66,11 @@
     .nav__links {
         border-bottom: 1px solid rgb(78, 78, 78);
         border-radius: none;
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+    .start-home {
+        display: none;
     }
 }
+

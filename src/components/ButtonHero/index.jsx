@@ -1,7 +1,7 @@
 import React, { useCallback, useRef, useState } from 'react'
 import './index.css'
 
-export default function Button ({ style, children, styleTal, hover }) {
+export default function Button ({ style, children, styleTal, hover, href, isDowload = false }) {
   const mql = window.matchMedia('(min-width: 800px)')
   const rounded = useRef()
 
@@ -20,6 +20,6 @@ export default function Button ({ style, children, styleTal, hover }) {
   })
 
   return (
-    <button onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className={`py-[10px] px-4 font-semibold text-white relative overflow-hidden transition-[background-color] rounded-3xl ${styleTal}`} style={style}><span className='children'>{children}</span> <span className=' w-14 h-14 top-0 absolute cubito' ref={rounded} /></button>
+    <a onMouseMove={handleMouseMove} href={href} download={!!isDowload} onMouseLeave={handleMouseLeave} className={`py-[10px] px-4 font-medium text-white relative overflow-hidden transition-[background-color] rounded-3xl ${styleTal}`} style={style}><span className='children'>{children}</span> <span className=' w-14 h-14 top-0 absolute cubito' ref={rounded} /></a>
   )
 }

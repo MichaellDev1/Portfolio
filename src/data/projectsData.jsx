@@ -28,5 +28,14 @@ export const projectsData = [
     technologies: [<DiHtml5 />, <DiCss3 />, <DiJavascript />, <SiTailwindcss />, <DiReact />],
     description: 'E-commerce que muestra diferentes productos con la posibilidad de agregar los mismos al carrito.',
     newProject: true
+  }, {
+    id: 3,
+    title: 'Play Game',
+    image: 'https://res.cloudinary.com/dfkvvcfxs/image/upload/v1682513022/screencapture-127-0-0-1-5500-index-html-2023-04-26-09_42_21_kpnhcn.png',
+    deploy: 'https://e-commerce-f7mzr1bwt-michaelldev1.vercel.app/',
+    github: 'https://github.com/MichaellDev1/Dashboard-App',
+    technologies: [<DiHtml5 />, <DiCss3 />, <DiJavascript />],
+    description: 'Sitio web con diferentes clases de minijuegos echos en javascript con la intención de mostrar la parte tecnica del desarrollo a travez del codigo.',
+    newProject: false
   }
 ]

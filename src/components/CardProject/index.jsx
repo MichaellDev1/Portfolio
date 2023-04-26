@@ -6,7 +6,7 @@ export default function CardProject ({ data, themes }) {
   const { deploy, description, github, image, newProject, technologies, title } = data
 
   return (
-    <div className='rounded-md flex relative w-[340px] flex-col justify-between m-3 card-projects'>
+    <div className='rounded-md flex relative sm:w-[330px] w-[300px] flex-col justify-between m-3 card-projects'>
       <a className='card-projects' href={deploy}>
         {
         newProject
@@ -17,7 +17,7 @@ export default function CardProject ({ data, themes }) {
       }
         <div className='flex flex-col justify-between overflow-hidden'>
           <div>
-            <div className='w-full h-[200px] overflow-hidden'>
+            <div className='w-full rounded-t-md h-[200px] overflow-hidden'>
               <img src={image} alt='images projects' loading='lazy' className='w-full h-full object-cover object-top hover:object-bottom image-projects' />
             </div>
             <div className='px-5 py-3'>
