@@ -1,12 +1,13 @@
 import React from 'react'
 import { AiOutlineLink, AiFillGithub } from 'react-icons/ai'
 import './index.css'
+import ButtonProjects from '../ButtonProject'
 
 export default function CardProject ({ data, themes }) {
   const { deploy, description, github, image, newProject, technologies, title } = data
 
   return (
-    <div className='rounded-md flex relative sm:w-[330px] w-[300px] flex-col justify-between m-3 card-projects'>
+    <div className='rounded-md flex relative sm:w-[330px] w-[300px] flex-col justify-between m-5 card-projects'>
       <a className='card-projects' href={deploy}>
         {
         newProject
@@ -36,12 +37,9 @@ export default function CardProject ({ data, themes }) {
           </div>
         </div>
       </a>
-      <div className='grid grid-cols-2 mt-5 gap-3'>
-
-        <a href={github} target='_BLANK' className='flex items-center justify-center text-sm py-1 text-[#c9d1d9] font-semibold rounded-md' style={{ border: `1px solid ${themes.borderButton}`, backgroundColor: themes.buttonProject, color: themes.text }} rel='noreferrer'><span className='mr-1'><AiFillGithub /></span>Git Hub</a>
-
-        <a href={deploy} target='_BLANK' className='flex items-center justify-center text-sm py-1 text-[#c9d1d9] font-semibold rounded-md' style={{ border: `1px solid ${themes.borderButton}`, backgroundColor: themes.buttonProject, color: themes.text }} rel='noreferrer'><span className='mr-1'><AiOutlineLink /></span>Deploy</a>
-
+      <div className='grid grid-cols-2 mt-5'>
+        <ButtonProjects deploy={deploy} icon={<AiFillGithub />} themes={themes} title='Git Hub' />
+        <ButtonProjects deploy={deploy} icon={<AiOutlineLink />} themes={themes} title='Deploy' />
       </div>
     </div>
   )

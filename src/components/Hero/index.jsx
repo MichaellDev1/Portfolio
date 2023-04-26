@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useState } from 'react'
+import React, { useContext } from 'react'
 import './hero.css'
 import Button from '../ButtonHero'
 import Context from '../../Context/Themes'
@@ -8,6 +8,7 @@ import { FaReact } from 'react-icons/fa'
 import { DiJavascript1, DiNodejsSmall } from 'react-icons/di'
 import BlobBlur from '../BlobBlur/BlobBlur'
 import MouseIcon from '../MouseIcon'
+import CV from '../../../public/CV.pdf'
 
 export default function Hero () {
   const { Themes } = useContext(Context)
@@ -26,8 +27,8 @@ export default function Hero () {
           </h1>
           <p className='text-sm font-normal description-hero mt-4' style={{ color: Themes.description }}>De manera autodidacta he conseguido todo los conocimientos como para empezar mi busqueda laboral y enfrentarme a nuevos desafios que me hagan crecer profesionalmente.</p>
         </div>
-        <div className='flex gap-2 mt-5 sm:text-[17px] md:justify-start text-[16px] justify-center'>
-          <Button style={{ background: '#0284C7' }} href='../../../public/curriculum.pdf' isDowload hover='#051f2c'>
+        <div className='flex  mt-5 sm:text-[17px] md:justify-start text-[16px] justify-center'>
+          <Button style={{ background: '#0284C7', marginRight: '10px' }} href={CV} isDowload hover='#051f2c'>
             <span className='flex items-center'>
               Descargar CV
               <span className='ml-2 text-xl'>
