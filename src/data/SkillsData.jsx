@@ -7,7 +7,7 @@ import {
   DiNodejsSmall,
   DiMongodb
 } from 'react-icons/di'
-import { SiTailwindcss, SiBootstrap } from 'react-icons/si'
+import { SiTailwindcss, SiBootstrap, SiFirebase, SiRedux } from 'react-icons/si'
 import { BsGit } from 'react-icons/bs'
 import { AiFillGithub } from 'react-icons/ai'
 import { FiGitlab } from 'react-icons/fi'
@@ -57,6 +57,12 @@ const skills = [
     inProcess: false
   },
   {
+    skill: 'Redux',
+    color: '#573C83',
+    icon: <SiRedux />,
+    inProcess: false
+  },
+  {
     skill: 'Git',
     color: '#ff3b00',
     icon: <BsGit />,
@@ -72,6 +78,12 @@ const skills = [
     skill: 'GitHub',
     color: '#ffebeb',
     icon: <AiFillGithub />,
+    inProcess: false
+  },
+  {
+    skill: 'Firebase',
+    color: '#FFCC30',
+    icon: <SiFirebase />,
     inProcess: false
   },
   {

@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import React, { Suspense, useState } from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 const LazyApp = React.lazy(() => import('./App'))

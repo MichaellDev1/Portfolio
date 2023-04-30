@@ -1,43 +1,16 @@
 import React, { useContext } from 'react'
 import Context from '../../Context/Themes'
-import { IoLogoInstagram } from 'react-icons/io'
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { BsArrowUpRight } from 'react-icons/bs'
 import BlobBlur from '../BlobBlur/BlobBlur'
 import Titles from '../Title/index'
+import { methodContact, redes } from '../../data/contact'
 import './index.css'
-
-const redes = [{
-  red: 'Instagram',
-  link: 'https://www.instagram.com/michael718s/',
-  icon: <IoLogoInstagram />
-}, {
-  red: 'Linkedin',
-  link: 'https://www.linkedin.com/in/michael-santucho-0a8876256',
-  icon: <AiFillLinkedin />
-}, {
-  red: 'Git Hub',
-  link: 'https://github.com/MichaellDev1',
-  icon: <AiFillGithub />
-}]
-
-const methodContact = [
-  {
-    method: 'email',
-    href: 'mailto:michaelsantuchodev@gmail.com',
-    title: 'michaelsantuchodev@gmail.com'
-  }, {
-    method: 'telefono',
-    href: 'tel:+543434641350',
-    title: '+543434641350'
-  }
-]
 
 export default function Contact () {
   const { Themes } = useContext(Context)
   return (
-    <div className='w-full py-5 relative ' id='contact'>
-
+    <div className='w-full py-5 min-h-[300px] relative ' id='contact'>
+      <BlobBlur positionStyles={{ top: '-100px', left: '-50px', height: '300px', width: '70%', opacity: '0.5' }} />
       <Titles Themes={Themes} title='Contacto' />
       <div className='flex flex-col justify-center'>
         <div style={{ color: Themes.text }}>
@@ -72,7 +45,7 @@ export default function Contact () {
           </div>
         </div>
       </div>
-      <BlobBlur positionStyles={{ top: '-100px', right: '500px', height: '300px', width: '70%', opacity: '0.5' }} />
+
     </div>
   )
 }

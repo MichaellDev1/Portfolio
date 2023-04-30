@@ -22,12 +22,12 @@ export default function Hero () {
       <div className='flex-1 z-[2]'>
         <div className='sm:text-[50px] md:text-left text-center ' style={{ color: Themes.text }}>
           <h1 className='md:items-start text-[50px] title flex flex-col items-center leading-none font-bold relative'>
-            <span className='flex mb-2 leading-3 title items-center'>Michael <span className='ml-2'><ManoSaludando /></span></span>
+            <span className='flex mb-2 leading-3 title items-center'>Michael <span className='ml-2 manoSaludando'><ManoSaludando /></span></span>
             <span>FrontEnd Developer</span>
           </h1>
           <p className='text-sm font-normal description-hero mt-4' style={{ color: Themes.description }}>De manera autodidacta he conseguido todo los conocimientos como para empezar mi busqueda laboral y enfrentarme a nuevos desafios que me hagan crecer profesionalmente.</p>
         </div>
-        <div className='flex  mt-5 sm:text-[17px] md:justify-start text-[16px] justify-center'>
+        <div className='flex mt-5 sm:text-[17px] md:justify-start text-[16px] justify-center'>
           <Button style={{ background: '#0284C7', marginRight: '10px' }} href={CV} isDowload hover='#051f2c'>
             <span className='flex items-center'>
               Descargar CV
@@ -41,6 +41,7 @@ export default function Hero () {
           </Button>
         </div>
       </div>
+
       <div className='flex-1 z-[2] relative md:flex-row flex-col h-[400px] justify-center items-center lg:flex hidden'>
         <div className='w-[410px] flex justify-center relative items-center  h-[410px] rounded-full' style={{ border: `2px solid ${Themes.text}` }}>
 
@@ -59,8 +60,8 @@ export default function Hero () {
             </div>
 
           </div>
-          <div className='w-[320px] overflow-hidden h-[320px] rounded-full'>
-            <img src='https://res.cloudinary.com/dfkvvcfxs/image/upload/v1682079963/image_cbj1l9.jpg' alt='xs' />
+          <div className='w-[320px] overflow-hidden justify-center items-center flex h-[320px] rounded-full' style={{ background: '#0000002d', backdropFilter: 'blur(60px)' }}>
+            <img src='https://res.cloudinary.com/dfkvvcfxs/image/upload/v1682079963/image_cbj1l9.jpg' alt='xs' loading='lazy' className='rounded-full w-[100%] h-[100%] object-cover object-top' />
           </div>
 
         </div>

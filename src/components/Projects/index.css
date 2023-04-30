@@ -1,0 +1,14 @@
+.typesRamas {
+    margin-right: 10px;
+}
+
+
+.borderProject{
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #f5d2b3;
+    bottom: 0;
+    left: 0;
+    transition: left .2s;
+}

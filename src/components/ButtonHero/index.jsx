@@ -20,6 +20,6 @@ export default function Button ({ style, children, styleTal, hover, href, isDowl
   })
 
   return (
-    <a onMouseMove={handleMouseMove} href={href} download={!!isDowload} onMouseLeave={handleMouseLeave} className={`py-[10px] px-4 font-medium text-white relative overflow-hidden transition-[background-color] rounded-3xl ${styleTal}`} style={style}><span className='children'>{children}</span> <span className=' w-14 h-14 top-0 absolute cubito' ref={rounded} /></a>
+    <a onMouseMove={handleMouseMove} href={href} download={!!isDowload} onMouseLeave={handleMouseLeave} className={`py-[8px] px-4 font-medium text-white flex justify-center items-center relative overflow-hidden transition-[background-color] text-base rounded-3xl ${styleTal}`} style={style}><span className='children'>{children}</span> <span className=' w-14 h-14 top-0 absolute cubito' ref={rounded} /></a>
   )
 }

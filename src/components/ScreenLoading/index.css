@@ -1,0 +1,66 @@
+.letter-loading {
+    letter-spacing: 10px;
+    animation: blurDesaparecer 2s alternate infinite cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.loading {
+    animation: preloaderr 3s cubic-bezier(1, -0.21, 0.54, 1.15);
+}
+
+.loader {
+    display: none;
+}
+
+.letter-loading:first-child {
+    animation-delay: .1s;
+}
+
+.letter-loading:nth-child(2) {
+    animation-delay: .4s;
+}
+
+.letter-loading:nth-child(3) {
+    animation-delay: .6s;
+}
+
+.letter-loading:nth-child(4) {
+    animation-delay: .8s;
+}
+
+.letter-loading:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.letter-loading:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+.letter-loading:nth-child(7) {
+    animation-delay: 1.4s;
+}
+
+.letter-loading:nth-child(8) {
+    animation-delay: 1.6s;
+}
+.letter-loading:nth-child(9) {
+    animation-delay: 1.8s;
+}
+.letter-loading:nth-child(10) {
+    animation-delay: 2s;
+}
+
+@keyframes blurDesaparecer {
+    100% {
+        filter: blur(50px);
+    }
+}
+
+@keyframes preloaderr {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

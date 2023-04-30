@@ -41,7 +41,7 @@ export default function Header () {
           </div>
           <div>
             <nav
-              className={`md:flex navBar text-sm py-[6px] relative font-semibold px-6 ${isShow ? 'flex' : 'hidden'}`}
+              className={`md:flex navBar text-sm py-[5px] relative font-semibold px-6 ${isShow ? 'flex' : 'hidden'}`}
               style={{ border: `1px solid ${Themes.borderNav}`, backdropFilter: 'blur(15px)', color: Themes.navColor }}
             >
               <div className='absolute right-7 top-6 btnOpenMenu'>
@@ -65,7 +65,7 @@ export default function Header () {
                   {label}
                 </a>
               ))}
-              <div className='animation start-home' ref={refElementNav} style={{ backgroundColor: Themes.cardSkill }} />
+              <div className='animation start-home' ref={refElementNav} />
 
             </nav>
             <div className={`w-full h-[100vh] md:hidden backgroundMenu ${isShow ? 'absolute' : 'hidden'} top-0 left-0`} onClick={handleShowMenu} />

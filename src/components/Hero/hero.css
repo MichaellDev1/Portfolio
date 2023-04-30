@@ -3,9 +3,27 @@
     transition: transform 1s;
 }
 
+.manoSaludando {
+    animation: manuSaludando 2s linear ;
+}
+
 @keyframes atom {
     100% {
         transform: rotate(360deg);
     }
 }
 
+
+@keyframes manuSaludando {
+    0% {
+        transform: rotate(-30deg);
+    }
+
+    50% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
