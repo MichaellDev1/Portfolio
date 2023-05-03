@@ -25,7 +25,7 @@ export default function Hero () {
             <span className='flex mb-2 leading-3 title items-center'>Michael <span className='ml-2 manoSaludando'><ManoSaludando /></span></span>
             <span>FrontEnd Developer</span>
           </h1>
-          <p className='text-sm font-normal description-hero mt-4' style={{ color: Themes.description }}>De manera autodidacta he conseguido todo los conocimientos como para empezar mi busqueda laboral y enfrentarme a nuevos desafios que me hagan crecer profesionalmente.</p>
+          <p className='text-sm font-normal description-hero mt-4' style={{ color: Themes.description }}>De manera autodidacta e estudiado constantemente y estoy en busqueda de mi primer experiencia laboral.</p>
         </div>
         <div className='flex mt-5 sm:text-[17px] md:justify-start text-[16px] justify-center'>
           <Button style={{ background: '#0284C7', marginRight: '10px' }} href={CV} isDowload hover='#051f2c'>

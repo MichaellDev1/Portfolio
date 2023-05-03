@@ -110,6 +110,7 @@ export {
   skills,
   DiJavascript,
   DiCss3,
+  SiRedux,
   DiHtml5,
   DiReact,
   SiTailwindcss
