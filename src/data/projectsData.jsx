@@ -32,7 +32,7 @@ export const projectsData = [
     type: 'frontend',
     title: 'App pelis',
     image:
-      'https://res.cloudinary.com/dfkvvcfxs/image/upload/v1682079356/appPelisImage-min_wx8ba7.png',
+      'https://res.cloudinary.com/dfkvvcfxs/image/upload/v1683235598/screencapture-localhost-5173-2023-05-04-18_09_13_1_tey1yd.png',
     deploy: 'https://app-pelis-mishelds.vercel.app/',
     github: 'https://github.com/MichaellDev1/App-Pelis',
     technologies: [<DiHtml5 />, <DiCss3 />, <DiJavascript />, <DiReact />],
@@ -66,9 +66,14 @@ export const projectsData = [
       'https://res.cloudinary.com/dfkvvcfxs/image/upload/v1683133861/todoapp_w0hw8p.png',
     deploy: 'https://to-do-app-eosin-nine.vercel.app/',
     github: 'https://github.com/MichaellDev1/ToDo',
-    technologies: [<DiHtml5 />, <DiCss3 />, <DiJavascript />, <DiReact />, <SiRedux />],
-    description:
-      'ToDo App para la administracion de tareas del dia a dia.',
+    technologies: [
+      <DiHtml5 />,
+      <DiCss3 />,
+      <DiJavascript />,
+      <DiReact />,
+      <SiRedux />
+    ],
+    description: 'ToDo App para la administracion de tareas del dia a dia.',
     newProject: true
   },
   {
@@ -82,6 +87,23 @@ export const projectsData = [
     technologies: [<DiHtml5 />, <DiCss3 />, <DiJavascript />],
     description:
       'Sitio web con diferentes clases de minijuegos echos en javascript con la intención de mostrar la parte tecnica del desarrollo a travez del codigo.',
+    newProject: false
+  },
+  {
+    id: 5,
+    type: 'frontend',
+    title: 'Manejador de ingresos y gastos',
+    image:
+      'https://res.cloudinary.com/dfkvvcfxs/image/upload/v1683753851/Screenshot_21_-min_g1zyuy.png',
+    deploy: 'https://dashboard-amount.vercel.app/',
+    github: 'https://github.com/MichaellDev1/balance-income-and-expenses',
+    technologies: [
+      <DiHtml5 />,
+      <DiCss3 />,
+      <DiJavascript />,
+      <SiTailwindcss />,
+      <DiReact />],
+    description: 'Aplicación web donde se puede manejar los gastos e ingresos de nuestro dinero, con la integración de una gráfica para mostar el balance.',
     newProject: false
   }
 ]

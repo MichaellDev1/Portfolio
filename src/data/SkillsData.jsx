@@ -7,7 +7,7 @@ import {
   DiNodejsSmall,
   DiMongodb
 } from 'react-icons/di'
-import { SiTailwindcss, SiBootstrap, SiFirebase, SiRedux } from 'react-icons/si'
+import { SiTailwindcss, SiBootstrap, SiFirebase, SiRedux, SiTypescript } from 'react-icons/si'
 import { BsGit } from 'react-icons/bs'
 import { AiFillGithub } from 'react-icons/ai'
 import { FiGitlab } from 'react-icons/fi'
@@ -30,6 +30,12 @@ const skills = [
     skill: 'Javascript',
     color: '#d8ff00',
     icon: <DiJavascript />,
+    inProcess: false
+  },
+  {
+    skill: 'TypeScript',
+    color: '#3178C6',
+    icon: <SiTypescript />,
     inProcess: false
   },
   {
@@ -90,13 +96,13 @@ const skills = [
     skill: 'Node js',
     color: '#019722',
     icon: <DiNodejsSmall />,
-    inProcess: true
+    inProcess: false
   },
   {
     skill: 'Mongo Db',
     color: '#04ff00',
     icon: <DiMongodb />,
-    inProcess: true
+    inProcess: false
   },
   {
     skill: 'My Sql',

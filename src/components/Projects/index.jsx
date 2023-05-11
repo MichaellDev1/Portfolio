@@ -1,7 +1,6 @@
 import React, { Suspense, useContext, useState, useRef } from 'react'
 import { projectsData } from '../../data/projectsData'
 import Context from '../../Context/Themes'
-import Button from '../ButtonHero/index'
 import BlobBlur from '../BlobBlur/BlobBlur'
 import Titles from '../Title'
 import './index.css'
@@ -64,8 +63,8 @@ export default function Projects () {
       : <h4 className='text-sm font-normal mt-2' style={{ color: Themes.text }}>No se han creado proyectos para esta sección aun. Es posible que el creador está estudiando las tecnologias para la creación de los mismos.</h4>
   }
         </div>
-        <div className='w-full text-center mt-10'>
-          <a href='https://github.com/MichaellDev1' className='bg-[#0284C7] py-[10px] text-white font-medium hover:bg-[#33bbff] transition-[background-color] px-10 rounded-3xl text-[15px]'>
+        <div className='w-full flex justify-center items-center text-center mt-10'>
+          <a href='https://github.com/MichaellDev1' className=' py-[10px] text-white font-medium  transition-[background-color] px-10 button-cutes rounded-3xl text-[15px]' style={{ color: Themes.text }}>
             Ver mas
           </a>
         </div>

@@ -18,7 +18,7 @@ const LightTheme = {
 const DarkTheme = {
   text: '#ffff',
   hover: '',
-  bgc: '#121112',
+  bgc: 'rgb(14 13 14)',
   border: '',
   buttons: '#5a5a5a',
   description: '#c0bfbf',

@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import BlobBlur from '../BlobBlur/BlobBlur'
 import Context from '../../Context/Themes'
+import './index.css'
 
 export default function AbountMe () {
   const { Themes } = useContext(Context)
@@ -13,10 +14,13 @@ export default function AbountMe () {
           </p>
         </div>
         <div className='flex-1 flex justify-center relative md:ml-5 md:mt-0 mt-10'>
-          <div className='sm:w-[320px] sm:h-[320px] h-[250px] w-[250px] rounded-xl relative overflow-hidden z-[2]' style={{ background: '#0000002d', backdropFilter: 'blur(60px)' }}>
-            <img src='https://res.cloudinary.com/dfkvvcfxs/image/upload/v1682803633/20230429_174528_cc8pz2.jpg' className='w-[100%] h-[100%] object-cover object-center' loading='lazy' alt='image Michael Santucho' />
+          <div className='sm:w-[320px] content-image sm:h-[320px] h-[250px] w-[250px] rounded-xl relative overflow-hidden z-[2]' style={{ background: '#0000002d', backdropFilter: 'blur(60px)' }}>
 
+            <div className='image'>
+              <img src='https://res.cloudinary.com/dfkvvcfxs/image/upload/v1682803633/20230429_174528_cc8pz2.jpg' className='w-[100%] h-[100%] rounded-xl object-cover object-center' loading='lazy' alt='image Michael Santucho' />
+            </div>
           </div>
+
           <BlobBlur positionStyles={{ top: '0', right: '0', height: '600px', width: '70%', opacity: '1' }} />
         </div>
       </div>

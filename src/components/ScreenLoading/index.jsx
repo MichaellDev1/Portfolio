@@ -13,7 +13,7 @@ export default function ScreenLoading () {
   }, [])
 
   return (
-    <div className={`w-full justify-center ${isLoading ? 'null' : 'loader'} flex z-20 top-0 left-0 text-white items-center min-h-[100vh] fixed bg-[#121212] loading`}>
+    <div className={`w-full justify-center ${isLoading ? 'null' : 'loader'} flex z-20 top-0 left-0 text-white items-center min-h-[100vh] fixed loading`} style={{ background: 'rgb(14 13 14)' }}>
       <h2 className='text-2xl font-semibold uppercase flex flex-col items-center'>
         <span> {loadingTitleName.map(letter => <span key={letter} className='letter-loading'>{letter}</span>)}</span>
         <span> {loadingTitleDeveloper.map(letter => <span key={letter} className='letter-loading'>{letter}</span>)}</span>

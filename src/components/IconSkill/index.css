@@ -14,9 +14,21 @@
 }
 
 @keyframes process {
-    0% {transform: scale(0);}
+    0% {
+        transform: scale(0);
+    }
+
     100% {
         transform: scale(1.9);
         opacity: 0;
     }
+}
+
+.ai-showcase {
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    background: radial-gradient(71.86% 50% at 50% 0%, rgba(168, 127, 255, .04) 0%, rgba(168, 127, 255, 0) 100%), rgba(4, 1, 21, .1);
+    border-radius: .375rem;
+    position: relative;
+    transition: .45s cubic-bezier(.6, .6, 0, 1) border-color;
 }

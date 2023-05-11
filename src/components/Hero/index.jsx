@@ -28,7 +28,7 @@ export default function Hero () {
           <p className='text-sm font-normal description-hero mt-4' style={{ color: Themes.description }}>De manera autodidacta e estudiado constantemente y estoy en busqueda de mi primer experiencia laboral.</p>
         </div>
         <div className='flex mt-5 sm:text-[17px] md:justify-start text-[16px] justify-center'>
-          <Button style={{ background: '#0284C7', marginRight: '10px' }} href={CV} isDowload hover='#051f2c'>
+          <Button style={{ background: '#0284C7', marginRight: '10px', boxShadow: 'inset 0 -7px 11px #80caffa3' }} href={CV} isDowload hover='#051f2c'>
             <span className='flex items-center'>
               Descargar CV
               <span className='ml-2 text-xl'>
@@ -36,7 +36,7 @@ export default function Hero () {
               </span>
             </span>
           </Button>
-          <Button style={{ border: '1px solid #7d7d7d', color: Themes.text }} href='#contact'>
+          <Button style={{ border: '1px solid #7d7d7d', color: Themes.text }} isButtonCute href='#contact'>
             Contacto
           </Button>
         </div>
