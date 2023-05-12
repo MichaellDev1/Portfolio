@@ -12,24 +12,44 @@ const LightTheme = {
   borderButton: 'rgb(201 201 201)',
   navColor: '#1B1B1B',
   hoverNav: '',
-  iconHero: '#fff'
+  iconHero: '#fff',
+  backgroundClip: 'rgba(255, 255, 255, .3)',
+  textFill: 'rgb(0 0 0 / 57%',
+  borderBtnAnimation: 'rgb(30 30 30 / 10%)',
+  borderTopFooter: 'rgb(225 215 215)',
+  gradientLower: '#ffffff8f',
+  gradientMedium: '#ffffff',
+  gradientAlto: '#ffffff',
+  cardSoftSkill: 'rgb(227 227 227)',
+  contentIconSoftSkill: 'rgb(191 191 191)',
+  descriptionSoftSkill: '#4c4b50'
 }
 
 const DarkTheme = {
   text: '#ffff',
   hover: '',
-  bgc: 'rgb(14 13 14)',
+  bgc: 'rgb(18, 17, 18)',
   border: '',
   buttons: '#5a5a5a',
   description: '#c0bfbf',
   cardSkill: 'rgb(29, 30, 34)',
   iconContent: '#151315',
   borderNav: '#4d4d4d',
-  buttonProject: '#21262d',
-  borderButton: '#382e35',
+  buttonProject: 'rgb(32 32 32)',
+  borderButton: 'rgb(78 78 78)',
   navColor: '#9d9d9d',
   hoverNav: '',
-  iconHero: '#000'
+  iconHero: '#000',
+  backgroundClip: 'rgba(255, 255, 255, .3)',
+  textFill: 'transparent',
+  borderBtnAnimation: 'rgba(255, 255, 255, .1)',
+  borderTopFooter: '#333',
+  gradientLower: '#1211128f',
+  gradientMedium: ' #121112',
+  gradientAlto: '#121112',
+  cardSoftSkill: '#252525',
+  contentIconSoftSkill: '#151315',
+  descriptionSoftSkill: '#8d8b99'
 }
 
 const Themes = {

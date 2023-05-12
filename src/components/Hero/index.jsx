@@ -9,6 +9,7 @@ import { DiJavascript1, DiNodejsSmall } from 'react-icons/di'
 import BlobBlur from '../BlobBlur/BlobBlur'
 import MouseIcon from '../MouseIcon'
 import CV from '../../../public/CV.pdf'
+import ButtonAnimation from '../ButtonAnimation'
 
 export default function Hero () {
   const { Themes } = useContext(Context)
@@ -28,17 +29,15 @@ export default function Hero () {
           <p className='text-sm font-normal description-hero mt-4' style={{ color: Themes.description }}>De manera autodidacta e estudiado constantemente y estoy en busqueda de mi primer experiencia laboral.</p>
         </div>
         <div className='flex mt-5 sm:text-[17px] md:justify-start text-[16px] justify-center'>
-          <Button style={{ background: '#0284C7', marginRight: '10px', boxShadow: 'inset 0 -7px 11px #80caffa3' }} href={CV} isDowload hover='#051f2c'>
+          <Button style={{ background: 'rgb(27 149 213)', marginRight: '10px' }} href='/cv' hover='#051f2c'>
             <span className='flex items-center'>
-              Descargar CV
+              Ver CV
               <span className='ml-2 text-xl'>
                 <RxFileText />
               </span>
             </span>
           </Button>
-          <Button style={{ border: '1px solid #7d7d7d', color: Themes.text }} isButtonCute href='#contact'>
-            Contacto
-          </Button>
+          <ButtonAnimation isBlank={false} href='#contact' text='Contacto' />
         </div>
       </div>
 
@@ -63,7 +62,6 @@ export default function Hero () {
           <div className='w-[320px] overflow-hidden justify-center items-center flex h-[320px] rounded-full' style={{ background: '#0000002d', backdropFilter: 'blur(60px)' }}>
             <img src='https://res.cloudinary.com/dfkvvcfxs/image/upload/v1682079963/image_cbj1l9.jpg' alt='xs' loading='lazy' className='rounded-full w-[100%] h-[100%] object-cover object-top' />
           </div>
-
         </div>
       </div>
     </div>

@@ -1,0 +1,47 @@
+.shadowBottom {
+    position: absolute;
+    width: 100%;
+    min-height: 300px;
+    bottom: 0;
+    left: 0;
+}
+
+.cardSoftSkill {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    background: linear-gradient(180deg, rgba(247, 246, 248, 0.2) 0%, rgba(255, 255, 255, 0.37) 100%);
+    border-radius: 5px;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.border-card {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    inset: 1px;
+    position: absolute;
+    z-index: 2;
+}
+
+.iconContent {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    border-radius: 5px;
+}
+
+.shadow {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 15;
+}

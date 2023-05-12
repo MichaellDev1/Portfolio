@@ -1,16 +1,16 @@
 .typesRamas {
     margin-right: 10px;
+    position: relative;
+    display: inline-block;
 }
 
-
-.borderProject{
+.spanBottom {
+    background: linear-gradient(to left, #3333336c, #a53792 50%, #ffffff00 100%);
+    width: 100%;
+    height: 1px;
     position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: #f5d2b3;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
-    transition: left .2s;
 }
 
 .button-cutes {
@@ -19,7 +19,7 @@
     align-items: center;
     -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: inset 0 -7px 11px #eae6ff1f;
     display: flex;
     padding: 7px 40px;

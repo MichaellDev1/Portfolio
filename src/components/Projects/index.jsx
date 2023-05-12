@@ -4,22 +4,25 @@ import Context from '../../Context/Themes'
 import BlobBlur from '../BlobBlur/BlobBlur'
 import Titles from '../Title'
 import './index.css'
+import ButtonAnimation from '../ButtonAnimation'
 const CardProject = React.lazy(() => import('../CardProject'))
 
 const typeProject = [
   {
-    type: 'frontend'
+    type: 'frontend',
+    roundedColor: '#C9B55F'
   }, {
-    type: 'backend'
+    type: 'backend',
+    roundedColor: '#6CC7F8'
   }, {
-    type: 'fullStack'
+    type: 'fullStack',
+    roundedColor: '#6238DB'
   }
 ]
 
 export default function Projects () {
   const { Themes } = useContext(Context)
   const [typeSelected, setTypeSelected] = useState('frontend')
-  const refElementProjectSelected = useRef()
 
   const handleChangeSelected = (e, type) => {
     e.preventDefault()
@@ -28,12 +31,6 @@ export default function Projects () {
 
   const projectSelected = projectsData.filter(project => project.type === typeSelected)
 
-  const handleMouseEnter = (e) => {
-    refElementProjectSelected.current.style = `left: ${e.target.offsetLeft}px; width: ${e.target.offsetWidth}px; opacity: 1;`
-  }
-  const handleMouseLeave = (e) => {
-    refElementProjectSelected.current.style = 'opacity: 0;'
-  }
   return (
     <div className='w-full min-h-[400px] relative mb-36' id='projects'>
       <div className='content-project relative z-[1]'>
@@ -41,32 +38,33 @@ export default function Projects () {
         <div className='relative'>
           <div className='flex items-center'>
             {
-              typeProject.map(({ type }) => (
+              typeProject.map(({ type, roundedColor }) => (
                 <a
-                  href='#' key={type} className={`capitalize sm:text-base text-sm ${typeSelected === type ? 'border-b-2 border-b-[#f5d2b3]' : null} font-medium typesRamas`} style={{ color: Themes.text }} onMouseEnter={(e) => handleMouseEnter(e)}
-                  onMouseLeave={handleMouseLeave} onClick={(e) => handleChangeSelected(e, type)}
-                >{type}
+                  href='#' key={type} className='capitalize sm:text-base text-sm font-medium typesRamas' style={{ color: Themes.text }} onClick={(e) => handleChangeSelected(e, type)}
+                >
+                  <div className='flex items-center'>
+                    <div className='w-[5px] h-[5px] rounded-full mr-1' style={{ background: roundedColor }} />
+                    {type}
+                  </div>
+                  {typeSelected === type ? <span className='spanBottom' style={{ background: `linear-gradient(to right, #e700dc00, ${roundedColor} 50%, #ffffff00 100%)` }} /> : null}
                 </a>
               ))
             }
           </div>
-          <div className='borderProject' ref={refElementProjectSelected} style={{ backgroundColor: Themes.cardSkill }} />
         </div>
-        <div className='flex flex-wrap lg:justify-start justify-center'>
+        <div className='min-h-[400px] flex flex-wrap justify-center w-full'>
           {
     projectSelected.length > 0
       ? projectSelected.map(data => (
-        <Suspense key={data.id} fallback={<h3>Cargandooo</h3>}>
+        <Suspense key={data.id} fallback={<h3>Cargandoo...</h3>}>
           <CardProject data={data} themes={Themes} />
         </Suspense>
       ))
-      : <h4 className='text-sm font-normal mt-2' style={{ color: Themes.text }}>No se han creado proyectos para esta sección aun. Es posible que el creador está estudiando las tecnologias para la creación de los mismos.</h4>
+      : <div className='min-h-[300px] items-center justify-start w-full flex'><h4 className='text-sm font-normal' style={{ color: Themes.text }}>No se han creado proyectos para esta sección aun. Es posible que el creador está estudiando las tecnologías para la creación de los mismos.</h4></div>
   }
         </div>
-        <div className='w-full flex justify-center items-center text-center mt-10'>
-          <a href='https://github.com/MichaellDev1' className=' py-[10px] text-white font-medium  transition-[background-color] px-10 button-cutes rounded-3xl text-[15px]' style={{ color: Themes.text }}>
-            Ver mas
-          </a>
+        <div className='w-full text-center mt-10'>
+          <ButtonAnimation text='Ver mas' href='https://github.com/MichaellDev1' />
         </div>
       </div>
       <BlobBlur positionStyles={{ top: '0', left: '0', height: '600px', width: '45%', opacity: '0.6' }} />
