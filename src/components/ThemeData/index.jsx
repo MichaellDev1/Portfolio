@@ -22,7 +22,8 @@ const LightTheme = {
   gradientAlto: '#ffffff',
   cardSoftSkill: 'rgb(227 227 227)',
   contentIconSoftSkill: 'rgb(191 191 191)',
-  descriptionSoftSkill: '#4c4b50'
+  descriptionSoftSkill: '#4c4b50',
+  backgroundIconHero: 'rgb(32 32 32)'
 }
 
 const DarkTheme = {
@@ -49,7 +50,8 @@ const DarkTheme = {
   gradientAlto: '#121112',
   cardSoftSkill: '#252525',
   contentIconSoftSkill: '#151315',
-  descriptionSoftSkill: '#8d8b99'
+  descriptionSoftSkill: '#8d8b99',
+  backgroundIconHero: 'rgb(32 32 32)'
 }
 
 const Themes = {

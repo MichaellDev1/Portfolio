@@ -8,7 +8,7 @@ import { FaReact } from 'react-icons/fa'
 import { DiJavascript1, DiNodejsSmall } from 'react-icons/di'
 import BlobBlur from '../BlobBlur/BlobBlur'
 import MouseIcon from '../MouseIcon'
-import CV from '../../../public/CV.pdf'
+
 import ButtonAnimation from '../ButtonAnimation'
 
 export default function Hero () {
@@ -29,10 +29,10 @@ export default function Hero () {
           <p className='text-sm font-normal description-hero mt-4' style={{ color: Themes.description }}>De manera autodidacta e estudiado constantemente y estoy en busqueda de mi primer experiencia laboral.</p>
         </div>
         <div className='flex mt-5 sm:text-[17px] md:justify-start text-[16px] justify-center'>
-          <Button style={{ background: 'rgb(27 149 213)', marginRight: '10px' }} href='/cv' hover='#051f2c'>
+          <Button style={{ background: 'rgb(27 149 213)', marginRight: '10px', border: '1px solid rgb(237 237 237 / 28%)' }} href='/cv' hover='#051f2c'>
             <span className='flex items-center'>
               Ver CV
-              <span className='ml-2 text-xl'>
+              <span className='ml-2 text-lg'>
                 <RxFileText />
               </span>
             </span>
