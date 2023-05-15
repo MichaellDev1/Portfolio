@@ -12,6 +12,7 @@ import { BsGit } from 'react-icons/bs'
 import { AiFillGithub } from 'react-icons/ai'
 import { FiGitlab } from 'react-icons/fi'
 import { GrMysql } from 'react-icons/gr'
+import { RxVercelLogo } from 'react-icons/rx'
 
 const skills = [
   {
@@ -60,6 +61,12 @@ const skills = [
     skill: 'React',
     color: '#3ec8fd',
     icon: <DiReact />,
+    inProcess: false
+  },
+  {
+    skill: 'Next.js',
+    color: '#fff',
+    icon: <RxVercelLogo />,
     inProcess: false
   },
   {

@@ -91,5 +91,23 @@ export const projectsData = [
       'Tailwind'],
     description: 'Aplicación web donde se puede manejar los gastos e ingresos de nuestro dinero, con la integración de una gráfica para mostar el balance.',
     newProject: false
+  }, {
+    id: 6,
+    type: 'fullStack',
+    title: 'Administrador de clientes',
+    image:
+      'https://res.cloudinary.com/dfkvvcfxs/image/upload/v1684174185/Screenshot_26_sdircz.png',
+    github: 'https://github.com/MichaellDev1/Administracion-de-clientes--backend',
+    deploy: 'https://admin-customer-rosy.vercel.app',
+    technologies: [
+      'Javascript',
+      'React',
+      'Tailwind',
+      'Express',
+      'Node.js',
+      'MongoDb'
+    ],
+    description: 'Aplicación en donde podemos administrar nuestros clientes, con la posibilidad de agregar, eliminar, editar y filtrar. Se menejan los roles de cada usuario registrado, los no admin estaran limitados a agregar y ver los clientes. Mas descripción en mi github.',
+    newProject: true
   }
 ]

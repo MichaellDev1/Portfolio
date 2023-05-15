@@ -1,4 +1,4 @@
-import React, { Suspense, useContext, useState, useRef } from 'react'
+import React, { Suspense, useContext, useState, useRef, useEffect } from 'react'
 import { projectsData } from '../../data/projectsData'
 import Context from '../../Context/Themes'
 import BlobBlur from '../BlobBlur/BlobBlur'
@@ -23,13 +23,17 @@ const typeProject = [
 export default function Projects () {
   const { Themes } = useContext(Context)
   const [typeSelected, setTypeSelected] = useState('frontend')
+  const [projectSelected, setProjectSelected] = useState([])
 
   const handleChangeSelected = (e, type) => {
     e.preventDefault()
     setTypeSelected(type)
   }
 
-  const projectSelected = projectsData.filter(project => project.type === typeSelected)
+  useEffect(() => {
+    const projectsFilter = projectsData.filter(project => project.type === typeSelected)
+    setProjectSelected(projectsFilter)
+  }, [typeSelected])
 
   return (
     <div className='w-full min-h-[400px] relative mb-36' id='projects'>
