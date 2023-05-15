@@ -17,7 +17,7 @@ export default function AbountMe () {
           <div className='sm:w-[320px] content-image sm:h-[320px] h-[250px] w-[250px] rounded-xl relative overflow-hidden z-[2]' style={{ background: '#0000002d', backdropFilter: 'blur(60px)' }}>
 
             <div className='image'>
-              <img src='https://res.cloudinary.com/dfkvvcfxs/image/upload/v1682803633/20230429_174528_cc8pz2.jpg' className='w-[100%] h-[100%] rounded-xl object-cover object-center' loading='lazy' alt='image Michael Santucho' />
+              <img src='https://res.cloudinary.com/dfkvvcfxs/image/upload/v1683918126/20230429_174528-compressed_t8426v.jpg' className='w-[100%] h-[100%] rounded-xl object-cover object-center' loading='lazy' alt='image Michael Santucho' />
             </div>
           </div>
 

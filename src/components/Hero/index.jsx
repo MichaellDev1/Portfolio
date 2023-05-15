@@ -60,7 +60,7 @@ export default function Hero () {
 
           </div>
           <div className='w-[320px] overflow-hidden justify-center items-center flex h-[320px] rounded-full' style={{ background: '#0000002d', backdropFilter: 'blur(60px)' }}>
-            <img src='https://res.cloudinary.com/dfkvvcfxs/image/upload/v1682079963/image_cbj1l9.jpg' alt='xs' loading='lazy' className='rounded-full w-[100%] h-[100%] object-cover object-top' />
+            <img src='https://res.cloudinary.com/dfkvvcfxs/image/upload/v1683917759/image-min-compressed_d3jzi1.jpg' alt='xs' loading='lazy' className='rounded-full w-[100%] h-[100%] object-cover object-top' />
           </div>
         </div>
       </div>

@@ -17,7 +17,7 @@ export default function SoftSkills () {
         <div className='grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1'>
           <CardSoftSkill text='Adaptabilidad' icon={<GiProgression />} description='Me adapto muy rápidamente a cualquier tecnología o herramienta que sale en el día a día' />
           <CardSoftSkill text='Creativo' icon={<GiInspiration />} description='Mi gran creatividad me lleva a crear software con una experiencia de usuario agradable' />
-          <CardSoftSkill text='Resolucion de problemas' icon={<VscCommentUnresolved />} description='Resuelvo problemas con una gran calidad, escribiendo código limpio y entendible para otros desarrolladores' />
+          <CardSoftSkill text='Resolución de problemas' icon={<VscCommentUnresolved />} description='Resuelvo problemas con una gran calidad, escribiendo código limpio y entendible para otros desarrolladores' />
         </div>
         <div className='grid lg:grid-cols-2 grid-cols-1'>
           <CardSoftSkill text='Agilidad' icon={<FaLaptopCode />} description='Tengo una gran agilidad para desenvolver cualquier inconveniente que surja' />

@@ -51,7 +51,7 @@ const skills = [
     inProcess: false
   },
   {
-    skill: 'Taildwind',
+    skill: 'Tailwind',
     color: '#25bdf7',
     icon: <SiTailwindcss />,
     inProcess: false

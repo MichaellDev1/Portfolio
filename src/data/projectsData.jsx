@@ -1,12 +1,3 @@
-import {
-  DiCss3,
-  DiHtml5,
-  DiJavascript,
-  DiReact,
-  SiTailwindcss,
-  SiRedux
-} from './SkillsData'
-
 export const projectsData = [
   {
     id: 0,
@@ -17,15 +8,13 @@ export const projectsData = [
     deploy: 'https://misheds-app.vercel.app/dashboard',
     github: 'https://github.com/MichaellDev1/Dashboard-App',
     technologies: [
-      <DiHtml5 />,
-      <DiCss3 />,
-      <DiJavascript />,
-      <SiTailwindcss />,
-      <DiReact />
+      'Javascript',
+      'React',
+      'Tailwind'
     ],
     description:
       'Aplicación administrativa con la simulación de compra de criptomonedas y precios actualizados.',
-    newProject: true
+    newProject: false
   },
   {
     id: 1,
@@ -35,9 +24,12 @@ export const projectsData = [
       'https://res.cloudinary.com/dfkvvcfxs/image/upload/v1683235598/screencapture-localhost-5173-2023-05-04-18_09_13_1_tey1yd.png',
     deploy: 'https://app-pelis-mishelds.vercel.app/',
     github: 'https://github.com/MichaellDev1/App-Pelis',
-    technologies: [<DiHtml5 />, <DiCss3 />, <DiJavascript />, <DiReact />],
+    technologies: ['Javascript',
+      'React',
+      'Styled-components',
+      'Tailwind'],
     description: 'Aplicación estilo netflix que muestra todas las peliculas.',
-    newProject: true
+    newProject: false
   },
   {
     id: 2,
@@ -48,11 +40,9 @@ export const projectsData = [
     deploy: 'https://eccomerce-seven.vercel.app/',
     github: 'https://github.com/MichaellDev1/Ecommerce',
     technologies: [
-      <DiHtml5 />,
-      <DiCss3 />,
-      <DiJavascript />,
-      <SiTailwindcss />,
-      <DiReact />
+      'Javascript',
+      'React',
+      'Tailwind'
     ],
     description:
       'E-commerce que muestra diferentes productos con la posibilidad de agregar los mismos al carrito.',
@@ -67,14 +57,12 @@ export const projectsData = [
     deploy: 'https://to-do-app-eosin-nine.vercel.app/',
     github: 'https://github.com/MichaellDev1/ToDo',
     technologies: [
-      <DiHtml5 />,
-      <DiCss3 />,
-      <DiJavascript />,
-      <DiReact />,
-      <SiRedux />
+      'Javascript',
+      'React',
+      'Redux'
     ],
     description: 'ToDo App para la administracion de tareas del dia a dia.',
-    newProject: true
+    newProject: false
   },
   {
     id: 4,
@@ -84,7 +72,7 @@ export const projectsData = [
       'https://res.cloudinary.com/dfkvvcfxs/image/upload/v1682513022/screencapture-127-0-0-1-5500-index-html-2023-04-26-09_42_21_kpnhcn.png',
     deploy: 'https://page-game.vercel.app/',
     github: 'https://github.com/MichaellDev1/Game-Page',
-    technologies: [<DiHtml5 />, <DiCss3 />, <DiJavascript />],
+    technologies: ['Html', 'Css', 'Javascript'],
     description:
       'Sitio web con diferentes clases de minijuegos echos en javascript con la intención de mostrar la parte tecnica del desarrollo a travez del codigo.',
     newProject: false
@@ -98,11 +86,9 @@ export const projectsData = [
     deploy: 'https://dashboard-amount.vercel.app/',
     github: 'https://github.com/MichaellDev1/balance-income-and-expenses',
     technologies: [
-      <DiHtml5 />,
-      <DiCss3 />,
-      <DiJavascript />,
-      <SiTailwindcss />,
-      <DiReact />],
+      'Javascript',
+      'React',
+      'Tailwind'],
     description: 'Aplicación web donde se puede manejar los gastos e ingresos de nuestro dinero, con la integración de una gráfica para mostar el balance.',
     newProject: false
   }
