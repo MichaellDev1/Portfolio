@@ -1,4 +1,4 @@
-import React, { Suspense, useContext, useState, useRef, useEffect } from 'react'
+import React, { Suspense, useContext, useState, useEffect } from 'react'
 import { projectsData } from '../../data/projectsData'
 import Context from '../../Context/Themes'
 import BlobBlur from '../BlobBlur/BlobBlur'

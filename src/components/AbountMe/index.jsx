@@ -7,10 +7,10 @@ export default function AbountMe () {
   const { Themes } = useContext(Context)
   return (
     <div className='min-h-[400px] mb-36  relative' id='abountme'>
-      <div><h2 className='py-5 sm:text-3xl text-2xl font-bold' style={{ color: Themes.text }}>Acerca de mi</h2></div>
+      <div><h2 className='py-5 sm:text-3xl text-2xl font-bold' style={{ color: Themes.text }}>Acerca de mí</h2></div>
       <div className='flex items-center justify-center md:flex-row flex-col'>
         <div className='flex-1'>
-          <p className=' text-start font-normal sm:text-lg text-base' style={{ color: Themes.description }}>Mi nombre completo es Michael Agustín Santucho, tengo 18 años y soy un apasionado por la tecnología. Mi curiosidad me lleva a estudiar constantemente y mantenerse actualizado sobre los últimos avances en el campo. Además, tengo un gran interés en el diseño y la experiencia de usuario, eso complementa mis skills como FrontEnd developer.
+          <p className=' text-start font-normal sm:text-lg text-base' style={{ color: Themes.description }}>Mi nombre completo es Michael Agustín Santucho, tengo 18 años y soy un apasionado por la tecnología. Mi curiosidad me lleva a estudiar constantemente y mantenerse actualizado sobre los últimos avances en el campo. Además, tengo un gran interés en el diseño y la experiencia de usuario, eso complementa mis habilidades como FrontEnd developer.
           </p>
         </div>
         <div className='flex-1 flex justify-center relative md:ml-5 md:mt-0 mt-10'>

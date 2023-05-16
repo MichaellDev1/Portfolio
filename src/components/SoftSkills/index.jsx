@@ -21,7 +21,7 @@ export default function SoftSkills () {
         </div>
         <div className='grid lg:grid-cols-2 grid-cols-1'>
           <CardSoftSkill text='Agilidad' icon={<FaLaptopCode />} description='Tengo una gran agilidad para desenvolver cualquier inconveniente que surja' />
-          <CardSoftSkill text='Comunicación' icon={<MdOutlineEmojiPeople />} description='Me gusta transmitir mucho lo que pienso, lo que opino, y de una manera constructiva.' />
+          <CardSoftSkill text='Comunicación' icon={<MdOutlineEmojiPeople />} description='Siento una fuerte inclinación para compartir mis pensamientos y opiniones de manera constructiva.' />
         </div>
       </div>
       <div className='shadowBottom' style={{ background: `linear-gradient(to bottom, #33333300, ${Themes.gradientLower} 50%, ${Themes.gradientMedium} 95%, ${Themes.gradientAlto} 75%)` }} />

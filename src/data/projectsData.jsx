@@ -28,7 +28,7 @@ export const projectsData = [
       'React',
       'Styled-components',
       'Tailwind'],
-    description: 'Aplicación estilo netflix que muestra todas las peliculas.',
+    description: 'Aplicación estilo netflix que muestra todas las películas.',
     newProject: false
   },
   {
@@ -61,7 +61,7 @@ export const projectsData = [
       'React',
       'Redux'
     ],
-    description: 'ToDo App para la administracion de tareas del dia a dia.',
+    description: 'ToDo App para la administración de tareas del día a día.',
     newProject: false
   },
   {
@@ -74,7 +74,7 @@ export const projectsData = [
     github: 'https://github.com/MichaellDev1/Game-Page',
     technologies: ['Html', 'Css', 'Javascript'],
     description:
-      'Sitio web con diferentes clases de minijuegos echos en javascript con la intención de mostrar la parte tecnica del desarrollo a travez del codigo.',
+      'Sitio web con diferentes clases de minijuegos hechos en javascript con la intención de mostrar la parte tecnica del desarrollo a traves del código.',
     newProject: false
   },
   {
@@ -93,7 +93,7 @@ export const projectsData = [
     newProject: false
   }, {
     id: 6,
-    type: 'fullStack',
+    type: 'backend',
     title: 'Administrador de clientes',
     image:
       'https://res.cloudinary.com/dfkvvcfxs/image/upload/v1684174185/Screenshot_26_sdircz.png',
@@ -107,7 +107,7 @@ export const projectsData = [
       'Node.js',
       'MongoDb'
     ],
-    description: 'Aplicación en donde podemos administrar nuestros clientes, con la posibilidad de agregar, eliminar, editar y filtrar. Se menejan los roles de cada usuario registrado, los no admin estaran limitados a agregar y ver los clientes. Mas descripción en mi github.',
+    description: 'Aplicación en donde podemos administrar nuestros clientes, con la posibilidad de agregar, eliminar, editar y filtrar. Se manejan los roles de cada usuario registrado, los no admin estaran limitados a agregar y ver los clientes. Más descripción en mi github.',
     newProject: true
   }
 ]
