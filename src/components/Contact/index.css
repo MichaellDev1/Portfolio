@@ -8,8 +8,7 @@
 
 .content-method-contact {
     display: flex;
-    align-items: center;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .contact-method {
