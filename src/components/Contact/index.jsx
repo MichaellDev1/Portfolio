@@ -22,14 +22,17 @@ export default function Contact () {
                 methodContact.map(({ href, method, title }) => (
                   <div key={method} className='contact-method'>
                     <h5 className='font-semibold mb-2 sm:text-2xl text-sm capitalize'>{method}:</h5>
-                    <a href={href} className='flex items-center font-semibold link-contect'>
+                    <a href={href} className='flex items-center font-medium text-sm link-contect'>
                       {title}
                       <span className='text-xs ml-1'> <BsArrowUpRight /></span>
                     </a>
                   </div>
                 ))
               }
-              <a href={curriculum} className='text-sm flex items-center mt-5 font-medium link-contect' download>Descargar curriculum<span className='text-xs ml-1'> <BsArrowUpRight /></span></a>
+              <div>
+                <h5 className='font-semibold mt-5 mb-2 sm:text-2xl text-sm capitalize'>Curriculum:</h5>
+                <a href={curriculum} className='text-sm flex items-center font-medium link-contect' download>Descargar curriculum<span className='text-xs ml-1'> <BsArrowUpRight /></span></a>
+              </div>
             </div>
             <div className='flex flex-col sm:ml-7 sm:mt-0 mt-11'>
               <h5 className='font-semibold sm:text-2xl  text-sm mb-2'>Mis redes:</h5>
