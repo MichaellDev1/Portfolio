@@ -5,7 +5,6 @@ import BlobBlur from '../BlobBlur/BlobBlur'
 import Titles from '../Title/index'
 import { methodContact, redes } from '../../data/contact'
 import './index.css'
-import curriculum from '../../../public/CV.pdf'
 
 export default function Contact () {
   const { Themes } = useContext(Context)
@@ -31,7 +30,7 @@ export default function Contact () {
               }
               <div>
                 <h5 className='font-semibold mt-5 mb-2 sm:text-2xl text-sm capitalize'>Curriculum:</h5>
-                <a href={curriculum} className='text-sm flex items-center font-medium link-contect' download>Descargar curriculum<span className='text-xs ml-1'> <BsArrowUpRight /></span></a>
+                <a href='../../../public/CV.pdf' className='flex items-center font-medium text-sm link-contect' download>Descargar curriculum<span className='text-xs ml-1'> <BsArrowUpRight /></span></a>
               </div>
             </div>
             <div className='flex flex-col sm:ml-7 sm:mt-0 mt-11'>
