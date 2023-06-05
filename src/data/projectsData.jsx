@@ -51,18 +51,19 @@ export const projectsData = [
   {
     id: 3,
     type: 'frontend',
-    title: 'ToDo App',
+    title: 'Tic Tac Toe multiplayer',
     image:
-      'https://res.cloudinary.com/dfkvvcfxs/image/upload/v1683133861/todoapp_w0hw8p.png',
-    deploy: 'https://to-do-app-eosin-nine.vercel.app/',
-    github: 'https://github.com/MichaellDev1/ToDo',
+      'https://res.cloudinary.com/dfkvvcfxs/image/upload/v1685965653/Screenshot_43_hooovl.jpg',
+    deploy: 'https://tic-tac-toe-multiplayer-henna.vercel.app/',
+    github: 'https://github.com/MichaellDev1/tic-tac-toe-multiplayer',
     technologies: [
-      'Javascript',
       'React',
-      'Redux'
+      'Node Js',
+      'Express',
+      'Sockect.io'
     ],
-    description: 'ToDo App para la administración de tareas del día a día.',
-    newProject: false
+    description: 'Juego multijugador en donde podemos comunicarnos a través de un chat global o privado, en caso de unirse a una sala.',
+    newProject: true
   },
   {
     id: 4,
