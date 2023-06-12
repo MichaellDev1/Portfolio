@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
 import Context from '../../Context/Themes'
-import cv from '../../../public/CV.pdf'
 import BlobBlur from '../BlobBlur/BlobBlur'
 import Titles from '../Title/index'
 import { methodContact, redes } from '../../data/contact'
 import { BsArrowUpRight } from 'react-icons/bs'
+import cv from '../../assets/CV.pdf'
 import './index.css'
 
 export default function Contact () {
