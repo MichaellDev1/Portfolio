@@ -27,7 +27,7 @@ export default function Footer () {
       }
     }
     setModeSelected(mode)
-  })
+  }, [])
 
   const buttonsMode = [{
     type: 0,

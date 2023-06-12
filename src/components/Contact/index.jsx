@@ -1,15 +1,15 @@
 import React, { useContext } from 'react'
 import Context from '../../Context/Themes'
-import { BsArrowUpRight } from 'react-icons/bs'
+import cv from '../../../public/CV.pdf'
 import BlobBlur from '../BlobBlur/BlobBlur'
 import Titles from '../Title/index'
 import { methodContact, redes } from '../../data/contact'
-import cv from '../../../public/CV.pdf'
-
+import { BsArrowUpRight } from 'react-icons/bs'
 import './index.css'
 
 export default function Contact () {
   const { Themes } = useContext(Context)
+
   return (
     <div className='w-full py-5 min-h-[300px] relative ' id='contact'>
       <BlobBlur positionStyles={{ top: '-100px', left: '-50px', height: '300px', width: '70%', opacity: '0.5' }} />
