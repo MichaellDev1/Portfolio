@@ -59,6 +59,7 @@ export const projectsData = [
     technologies: [
       'React',
       'Node Js',
+      'TypeScript',
       'Express',
       'Sockect.io'
     ],

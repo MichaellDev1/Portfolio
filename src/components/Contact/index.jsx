@@ -4,6 +4,8 @@ import { BsArrowUpRight } from 'react-icons/bs'
 import BlobBlur from '../BlobBlur/BlobBlur'
 import Titles from '../Title/index'
 import { methodContact, redes } from '../../data/contact'
+import cv from '../../../public/CV.pdf'
+
 import './index.css'
 
 export default function Contact () {
@@ -30,7 +32,10 @@ export default function Contact () {
               }
               <div>
                 <h5 className='font-semibold mt-5 mb-2 sm:text-2xl text-sm capitalize'>Curriculum:</h5>
-                <a href='../../../public/CV.pdf' className='flex items-center font-medium text-sm link-contect' download>Descargar curriculum<span className='text-xs ml-1'> <BsArrowUpRight /></span></a>
+                <a href={cv} className='flex items-center font-medium text-sm link-contect' download>
+                  Descargar curriculum
+                  <span className='text-xs ml-1'><BsArrowUpRight /></span>
+                </a>
               </div>
             </div>
             <div className='flex flex-col sm:ml-7 sm:mt-0 mt-11'>
@@ -49,7 +54,6 @@ export default function Contact () {
           </div>
         </div>
       </div>
-
     </div>
   )
 }
