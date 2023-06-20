@@ -8,7 +8,7 @@ export const projectsData = [
     deploy: 'https://misheds-app.vercel.app/dashboard',
     github: 'https://github.com/MichaellDev1/Dashboard-App',
     technologies: [
-      'Javascript',
+      'JavaScript',
       'React',
       'Tailwind'
     ],

@@ -115,7 +115,7 @@ const skills = [
     skill: 'My Sql',
     color: '#005c83',
     icon: <GrMysql />,
-    inProcess: true
+    inProcess: false
   }
 ]
 
