@@ -4,7 +4,7 @@ const navLink = [
     href: '#abountme'
   },
   {
-    label: 'habilidades',
+    label: 'Habilidades',
     href: '#skills'
   },
   {

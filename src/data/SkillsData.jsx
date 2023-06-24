@@ -16,19 +16,19 @@ import { RxVercelLogo } from 'react-icons/rx'
 
 const skills = [
   {
-    skill: 'Html',
+    skill: 'HTML',
     color: '#ff6a00',
     icon: <DiHtml5 />,
     inProcess: false
   },
   {
-    skill: 'Css',
+    skill: 'CSS',
     color: '#0072ff',
     icon: <DiCss3 />,
     inProcess: false
   },
   {
-    skill: 'Javascript',
+    skill: 'JavaScript',
     color: '#d8ff00',
     icon: <DiJavascript />,
     inProcess: false
