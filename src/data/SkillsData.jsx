@@ -13,6 +13,7 @@ import { AiFillGithub } from 'react-icons/ai'
 import { FiGitlab } from 'react-icons/fi'
 import { GrMysql } from 'react-icons/gr'
 import { RxVercelLogo } from 'react-icons/rx'
+import { CSharp } from './Icons'
 
 const skills = [
   {
@@ -112,10 +113,16 @@ const skills = [
     inProcess: false
   },
   {
-    skill: 'My Sql',
+    skill: 'SQL',
     color: '#005c83',
     icon: <GrMysql />,
     inProcess: false
+  },
+  {
+    skill: 'C#',
+    color: '#9E559A',
+    icon: <CSharp />,
+    inProcess: true
   }
 ]
 

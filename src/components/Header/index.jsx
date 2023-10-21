@@ -93,7 +93,7 @@ export default function Header () {
               <RiLinkedinLine />
             </a>
             <a
-              href='https://www.instagram.com/michael718s'
+              href='https://www.instagram.com/michael.santucho'
               target='_blank'
               className='text-[20px] mx-1 rounded-full p-[6px]'
               style={{ border: `1px solid ${Themes.borderNav}`, color: Themes.text, backdropFilter: 'blur(15px)' }}
